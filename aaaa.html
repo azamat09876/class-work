@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 32px;
+            line-height: 1.5;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+    </style>
+</head>
+<body>
+        <div id="box1">
+        <p id="text1">я-пепвый</p>
+        <p id="text2">я-второй</p>
+        <p id="texs3">я-третий</p>
+        <p id="texs4">я-четвертый</p>
+    </div>
+
+    <script>
+    
+    
+        let p  =document.createElement('p'),
+            beforeP = document.getElementById('text1');
+        p.append('hello world');
+        p.id='before'
+        p.style.color='red';
+        // beforeP.after(p);
+        let box1 = document.getElementById('box1');
+        box1.prepend(p);
+//         let removing=document.getElementById('text1');
+//         let removing=document.body.removeChild(removing);
+//         console.log(removed);
+//         let p = document.getElementsByClassName('p');
+//         while(p-length){
+//             document.body.removeChild(p[0])
+//         }
+// removeChild Это метод который удаляет послоедний элемент
+// let cloned=document.getElementById('box1').cloneNode(true);
+// cloned.id ='box2';
+// document.body.insertBefore(cloned,document.getElementById('box1'));
+
+</script>
+</body>
+</html>

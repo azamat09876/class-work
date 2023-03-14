@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat dolore, ullam cum, ea praesentium veniam distinctio eum qui, accusantium nihil blanditiis beatae maxime consequatur facilis. Repellat id et enim.</div>
+    <div id="box" class="box"></div>
+    <div id="box" class="box"></div>
+    <div id="box" class="box"></div>
+    <div id="box" class="box"></div>
+    <div id="box" class="box"></div>
+
+    <script>
+let p = document.getElementById('text1');
+p.style.color ='red';
+p.style.color ='24px';
+p.style.fontWeight ='bold';
+
+let divs = document.getElementsByClassName('box');
+let colors = ['red','yellow','pink','purple','green',
+'orange','black','blue'];
+console.log(divs);
+for(let i = 0; i < divs.length; i++){
+    divs[i].style.width = '100px';
+    divs[i].style.height = '100px';
+    divs[i].style.background = '#'+(0x1000000)
+    divs[i].style.margin = '10px';
+    console.log(divs[i]);
+}
+    
+    
+  for(let i = 1; i < divs.length; i+=2){
+  divs[i].style.background='blue'
+
+  };
+    
+    </script>
+        
+</body>
+</html>
